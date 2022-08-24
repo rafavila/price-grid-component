@@ -1,0 +1,176 @@
+
+*  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    
+    margin: 2rem;
+    
+}
+
+.card {
+    padding: 1.8rem;
+    
+}
+
+#community {
+    background: white;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#community h1 {
+    font-size: 1.5rem;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1.5rem;
+}
+
+#community h2 {
+    font-size: 1.1rem;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 1.5rem;
+}
+
+#community p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5rem;
+    word-spacing: 0.2rem;
+}
+
+#subscription {
+    background-color: hsl(179, 62%, 43%);
+}
+
+#subscription h2 {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.price_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: fit-content;
+    font-size: 1.1rem;
+    color:  hsl(204, 43%, 93%, 0.5);
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+
+.price_wrapper h3 {
+    color: white;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+#subscription p {
+    font-size: 1.1rem;
+    color: hsla(203, 44%, 93%, 0.85);
+    margin-bottom: 2.1rem;
+    
+}
+
+#subscription button {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 8px;
+    padding: 1.2rem;
+    width: 100%;
+    box-shadow: 0px 7px 23px 0px rgba(0,0,0,0.20);
+}
+
+#features {
+    background-color: hsl(179, 51%, 57%);
+    border-radius: 0px 0px 15px 15px;
+}
+
+#features h2 {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+}
+
+#features h4 {
+    color: hsla(203, 44%, 93%, 0.85);
+    font-weight: 100;
+    margin-bottom: .3rem
+}
+
+@media (min-width: 550px) and (max-width: 992px) {
+
+    .card {
+        text-align: center; 
+    }
+
+    .price_wrapper {
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 993px) {
+
+    .container {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 0px;
+        margin: auto;
+        max-width: 650px;
+    }
+
+   
+    #community {
+        grid-area: 1 / 1 / 2 / 3;  
+    }
+
+    #subscription {
+        grid-row: 2;
+        border-radius: 0px 0px 0px 15px;
+    }
+
+    #features {
+        grid-row: 2;
+        border-radius: 0px 0px 15px 0px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
